@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+
+}
+
+/*UNIVERSALES*/
+
+a{
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+/*UTILIDADES*/
+
+.change-font{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    
+}
+
+/*ENCABEZADO*/
+
+.contenedor-header{
+    background-image: url(background-img.jpg);
+    background-color: rgba(0, 0, 0, 0.696);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.barra-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-header p{
+    font-size: 3rem;
+}
+
+.enlaces-header a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+.enlaces-header a:last-of-type{
+    margin-right: 0;
+}
+
+.enlaces-header a:hover{
+    color: aqua;
+}
+
+.contenedor-header p{
+    color: white;
+}
+
+.titulo-header{
+    color: white;
+    margin: auto;
+    font-size: 7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.contenedor-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.8rem 3rem 5rem 3rem;
+}
+
+/*ARTICULOS*/
+.contenedor-articulo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 70rem;
+    background-color: #283848;
+    color: white;
+}
+
+.imagen{
+    width: 100rem;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+.articulo{
+    padding: 1rem 5rem;
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.articulo h2{
+    text-align: center;
+    font-size: 4rem;
+}
+.articulo p{
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    max-width: 58rem;
+    margin-top: 2rem;
+}
+
+.productos-title{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.949);
+}
+.productos-title p{
+    font-size: 5rem;
+    padding: 10px;
+    color: white;
+}
+
+/*Contenedor Principal*/
+
+.contenedor-principal{ 
+    background-color: rgba(0, 0, 0, 0.949);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.producto:last-of-type{
+    margin-right: 0;
+}
+
+.producto img{
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.producto h3{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.producto p{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.boton{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem;
+    background-color: #c38a10;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.4rem 1rem #000000;
+}
+.boton:hover{
+    background-color: #283848;
+}
+
+.footer{
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #283848;
+    color: white;
+}
+
+.footer h3{
+    font-size: 1.4rem;
+}
+
+.footer h3{
+    padding: 30px;
+}
+
+.footer p{
+    padding: 30px;
+}
+
+/*MAS INFORMACION*/
+
+.contenedor-informacion{
+    background-color: #283848;
+    display: flex;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.informacion h3{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+.informacion p{
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    padding: 0 2rem;
+    max-width: 65%;
+}
+.informacion h3 p{
+    border: 1rem solid white;
+}
+.iconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    width: 40rem;
+    height: 30rem;
+    position: absolute;
+    left: 100rem;
+    top: 10rem;
+    border-radius: 2rem;
+    box-shadow: 0.4rem 0.5rem 1rem;
+}
+.iconos p{ 
+    margin-left: 1rem;
+}
+.iconos img{
+    width: 4rem;
+}
+.tamaño, .camara, .ram, .rom{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+/*CONTACTO*/
+
+.contacto{
+    background-color: #283848;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto img{
+    margin: 2rem 0;
+    border: 1rem solid pink;
+    border-radius: 2rem;
+}
+
+.contacto h2{
+    margin: 2rem 0;
+    color: white;
+    font-size: 2rem;
+}
+.contacto p{
+    color: white;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+}
+
+/*empresa*/
+.empresa{
+    background-image: url(img/empresa.jpg);
+    background-color: #000000ce;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.empresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.empresa h2{
+    font-size: 5rem;
+    color: white;
+}
+.empresa p{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.3;
+    color: white;
+    max-width: 90rem;
+}
+
+.empresa h2:hover{
+    color: rgb(0, 255, 255);
+}
+.empresa p:hover{
+    color: rgb(0, 255, 255);
+}
+
+/*MAS*/
+
+.contenedor-principal-mas{
+    background-color: #283848;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contenedor-principal-mas .producto{
+    width: 40rem;
+}
+.contenedor-principal-mas .producto:hover{
+    background-color: #ffffff02;
+    border-radius: 2rem;
+}
+
+.title-mas{
+    background-color: #283848;
+    color: white;
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
